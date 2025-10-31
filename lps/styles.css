@@ -1,0 +1,50 @@
+/* Mobile-first styles */
+:root {
+  --hero-min-height: 70vh;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  min-height: var(--hero-min-height);
+  padding-top: 5rem; /* espaço por causa da navbar fixa */
+  padding-bottom: 3rem;
+  background: linear-gradient(180deg, #0d6efd 0%, #0b5ed7 60%, #0a58ca 100%);
+  color: #fff;
+}
+
+.hero-section .btn-outline-light {
+  border-color: rgba(255,255,255,0.6);
+  color: #fff;
+}
+
+.hero-section .btn-outline-light:hover {
+  background-color: rgba(255,255,255,0.15);
+}
+
+/* Cards responsivos mantêm altura homogênea via h-100 no HTML */
+
+/* Ajuste suave para foco de acessibilidade em links do footer */
+footer a:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+/* Melhor legibilidade para labels e placeholders */
+::placeholder {
+  color: #6c757d;
+}
+
+label.form-label {
+  font-weight: 500;
+}
+
+/* Desktop refinements */
+@media (min-width: 992px) {
+  :root { --hero-min-height: 80vh; }
+  .hero-section { padding-top: 6rem; padding-bottom: 4rem; }
+}
+
+

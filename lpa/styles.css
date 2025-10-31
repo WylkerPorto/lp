@@ -1,0 +1,46 @@
+/* Mobile-first, animações suaves e HTML semântico */
+:root {
+  --hero-min-height: 72vh;
+  --bg-accent: radial-gradient(1200px 600px at 85% -10%, rgba(255,255,255,0.25), rgba(255,255,255,0) 60%);
+}
+
+body { scroll-behavior: smooth; }
+
+.hero-section {
+  min-height: var(--hero-min-height);
+  padding-top: 5.5rem; /* espaço para navbar */
+  padding-bottom: 3rem;
+  background: linear-gradient(180deg, #0d6efd 0%, #0b5ed7 55%, #0a58ca 100%);
+  color: #fff;
+}
+
+.bg-shape {
+  position: absolute;
+  inset: 0;
+  background: var(--bg-accent);
+  pointer-events: none;
+}
+
+/* Animações utilitárias (IntersectionObserver aplica .is-visible) */
+.reveal { opacity: 0; transform: translateY(12px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.slide-up { transform: translateY(16px); }
+.reveal.slide-up-delay { transform: translateY(18px); transition-delay: .15s; }
+.reveal.fade-in { transition: opacity .7s ease; }
+.reveal.fade-in-delay { transition: opacity .7s ease; transition-delay: .2s; }
+.reveal.zoom-in { transform: scale(.96); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* Botões de contraste no hero */
+.hero-section .btn-outline-light:hover { background-color: rgba(255,255,255,0.15); }
+
+/* Forms & acessibilidade */
+label.form-label { font-weight: 500; }
+::placeholder { color: #6c757d; }
+
+/* Desktop refinements */
+@media (min-width: 992px) {
+  :root { --hero-min-height: 82vh; }
+  .hero-section { padding-top: 6.25rem; padding-bottom: 4rem; }
+}
+
+
