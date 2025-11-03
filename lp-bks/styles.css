@@ -12,8 +12,12 @@ header {
   );
 }
 
-footer {
+.bg-night {
   background-color: #0f172a;
+}
+
+.bg-card {
+  background-color: #374151;
 }
 
 header picture img {
@@ -45,7 +49,7 @@ header > div > div {
 
 section.card {
   background: #111827;
-  margin-top: -20px;
+  margin-top: -35px;
   max-width: 1200px;
 }
 

@@ -35,6 +35,8 @@
 </head>
 
 <body class="font-arial">
+
+  <!-- ========================= HEADER ========================= -->
   <header class="pb-5">
     <picture class="container mx-auto d-flex flex-column flex-lg-row justify-content-between px-4 pt-2"
       data-aos="fade-down">
@@ -60,128 +62,222 @@
           estratégico.</small>
       </div>
     </div>
+
+    <a href="#contato" class="btn btn-warning mt-4 px-4 py-2 fw-bold mx-auto d-table rounded-5"
+      data-aos="fade-down">Fale com um
+      especialista</a>
   </header>
 
-  <main>
-    <section class="shadow card border-1 border-dark-subtle mx-4 text-white p-3 mx-lg-auto" data-aos="fade-up">
-      <p class="text-center h2 mb-5">Acompanhamento de desempenho</p>
+  <!-- ========================= QUEM SOMOS ========================= -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4" data-aos="fade-up">Quem Somos</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-in" data-aos-delay="100">
+        <p>
+          O <strong>Grupo BKS</strong> é referência em soluções corporativas inteligentes, unindo <strong>BPO</strong>,
+          <strong>Data Analytics</strong> e <strong>Tecnologia</strong> em um ecossistema completo que transforma dados
+          em decisões estratégicas.
+        </p>
+        <p>
+          Nossa missão é potencializar resultados através da inovação e eficiência operacional, promovendo crescimento
+          sustentável e insights de valor.
+        </p>
+      </div>
+      <div class="col-md-6 text-center" data-aos="fade-in" data-aos-delay="200">
+        <img src="assets/business-analytics.png" alt="Análise de dados" class="img-fluid rounded" data-aos="zoom-in" />
+      </div>
+    </div>
+  </section>
 
-      <div class="d-flex flex-wrap gap-3 cards-wrapper">
-        <div class="card text-white p-4" data-aos="fade-up" data-aos-delay="100">
-          <span>Objetivos Equipe</span>
-          <p class="countup" data-target="133000" data-prefix="R$ "></p>
+  <!-- ========================= SOLUÇÕES ========================= -->
+  <section class="bg-night pb-5">
+    <div class="container py-5 border-top border-secondary">
+      <h2 class="text-center mb-5 text-white b800" data-aos="fade-up">Nossas Soluções</h2>
+
+      <div class="row g-4 text-center">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card bg-card border-light p-4 h-100">
+            <img src="assets/bpo-icon.svg" class="mx-auto mb-3" alt="BPO" width="60">
+            <h4 class="text-primary b800">BPO Inteligente</h4>
+            <p class="text-white">Terceirização estratégica de processos com foco em eficiência, agilidade e controle.
+            </p>
+          </div>
         </div>
-        <div class="card text-white p-4" data-aos="fade-up" data-aos-delay="200">
-          <span>Realizado</span>
-          <p class="countup" data-target="150000" data-prefix="R$ "></p>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card bg-card border-light p-4 h-100">
+            <img src="assets/analytics-icon.svg" class="mx-auto mb-3" alt="Data Analytics" width="60">
+            <h4 class="text-primary b800">Data Analytics</h4>
+            <p class="text-white">Decisões guiadas por dados, com dashboards e relatórios que transformam informação em
+              ação.</p>
+          </div>
         </div>
-        <div class="card text-white p-4" data-aos="fade-up" data-aos-delay="300">
-          <span>Volumetria</span>
-          <p class="countup" data-target="15130"></p>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card bg-card border-light p-4 h-100">
+            <img src="assets/tech-icon.svg" class="mx-auto mb-3" alt="Tecnologia" width="60">
+            <h4 class="text-primary b800">Tecnologia Corporativa</h4>
+            <p class="text-white">Ferramentas modernas e integrações inteligentes para automatizar e otimizar sua
+              gestão.</p>
+          </div>
         </div>
-        <div class="card text-white p-4" data-aos="fade-up" data-aos-delay="400">
-          <span>Ticket Médio</span>
-          <p class="countup" data-target="12500" data-prefix="R$ "></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= RESULTADOS ========================= -->
+  <section class="shadow card border-1 border-dark-subtle mx-4 text-white p-3 mx-lg-auto rounded-4" data-aos="fade-up">
+    <p class="text-center h2 mb-5">Acompanhamento de desempenho</p>
+
+    <div class="d-flex flex-wrap gap-3 cards-wrapper">
+      <div class="card text-white p-4 border-light" data-aos="fade-up" data-aos-delay="100">
+        <span>Objetivos Equipe</span>
+        <p class="countup" data-target="133000" data-prefix="R$ "></p>
+      </div>
+      <div class="card text-white p-4 border-light" data-aos="fade-up" data-aos-delay="200">
+        <span>Realizado</span>
+        <p class="countup" data-target="150000" data-prefix="R$ "></p>
+      </div>
+      <div class="card text-white p-4 border-light" data-aos="fade-up" data-aos-delay="300">
+        <span>Volumetria</span>
+        <p class="countup" data-target="15130"></p>
+      </div>
+      <div class="card text-white p-4 border-light" data-aos="fade-up" data-aos-delay="400">
+        <span>Ticket Médio</span>
+        <p class="countup" data-target="12500" data-prefix="R$ "></p>
+      </div>
+    </div>
+
+    <div class="card mt-3 p-3 border-light" data-aos="fade-in" data-aos-delay="500">
+      <!-- chart.js mensal com volume de vendas do tipo bar -->
+      <canvas id="salesChart" height="200"></canvas>
+    </div>
+
+    <div class="row g-0 mt-5 gap-3">
+      <div class="card text-white p-4 border-light" data-aos="fade-in">
+        <!-- progress bar com % de atingimento do objetivo  -->
+        <p class="text-center h5 b800 mb-4">Desempenho Pessoal x Metas</p>
+
+        <div class="mt-2">
+          <progress value="100" max="100" data-progress-value="100"></progress>
+          <span>Marta</span>
+        </div>
+        <div class="mt-2">
+          <progress value="100" max="100" data-progress-value="100"></progress>
+          <span>Cinthia</span>
+        </div>
+        <div class="mt-2">
+          <progress value="100" max="100" data-progress-value="100"></progress>
+          <span>Matheus</span>
+        </div>
+        <div class="mt-2">
+          <progress value="95" max="100" data-progress-value="95"></progress>
+          <span>Beto</span>
+        </div>
+        <div class="mt-2">
+          <progress value="86" max="100" data-progress-value="86"></progress>
+          <span>Vanessa</span>
         </div>
       </div>
 
-      <div class="card mt-3 p-3" data-aos="fade-in" data-aos-delay="500">
-        <!-- chart.js mensal com volume de vendas do tipo bar -->
-        <canvas id="salesChart" height="200"></canvas>
+      <div class="card text-white p-4 border-light" data-aos="fade-in">
+        <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
+          <span>Cinthia</span>
+          <span class="countup text-green b800" data-target="151.8" data-suffix="%"></span>
+        </div>
+        <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
+          <span>Beto</span>
+          <span class="countup text-green b800" data-target="128.47" data-suffix="%"></span>
+        </div>
+        <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
+          <span>Matheus</span>
+          <span class="countup text-green b800" data-target="111.11" data-suffix="%"></span>
+        </div>
+        <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
+          <span>Maria</span>
+          <span class="countup text-red b800" data-target="95" data-suffix="%"></span>
+        </div>
+        <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
+          <span>Vanessa</span>
+          <span class="countup text-red b800" data-target="86" data-suffix="%"></span>
+        </div>
       </div>
 
-      <div class="row g-0 mt-5 gap-3">
-        <div class="card text-white p-4" data-aos="fade-in">
-          <!-- progress bar com % de atingimento do objetivo  -->
-          <p class="text-center h5 b800 mb-4">Desempenho Pessoal x Metas</p>
+    </div>
 
-          <div class="mt-2">
-            <progress value="100" max="100" data-progress-value="100"></progress>
-            <span>Marta</span>
-          </div>
-          <div class="mt-2">
-            <progress value="100" max="100" data-progress-value="100"></progress>
-            <span>Cinthia</span>
-          </div>
-          <div class="mt-2">
-            <progress value="100" max="100" data-progress-value="100"></progress>
-            <span>Matheus</span>
-          </div>
-          <div class="mt-2">
-            <progress value="95" max="100" data-progress-value="95"></progress>
-            <span>Beto</span>
-          </div>
-          <div class="mt-2">
-            <progress value="86" max="100" data-progress-value="86"></progress>
-            <span>Vanessa</span>
-          </div>
+    <p class="text-end mt-3 b800">Biágil soluções inteligentes</p>
+  </section>
+
+  <!-- ========================= IMPACT ========================= -->
+  <section class="container mt-5">
+    <p class="h1 b800 text-center" data-aos="fade-up">Seus dados de RH virando decisões milionárias. <span
+        class="text-blue b800">O que
+        era custo, agora é estrategia</span></p>
+    <p class="h5 mt-3 text-center" data-aos="fade-up" data-aos-delay="100">Capacitamos empresas a alcançar excelencia
+      operacional por meio de insights de
+      dados
+      poderosos e soluções
+      tecnologicas integradas. com anos de experiencia no mercado, somos especialistas em transformar desafios
+      complexos em oportunidades de crescimento.</p>
+  </section>
+
+  <!-- ========================= COMO FUNCIONA ========================= -->
+  <div class="bg-night text-white">
+    <section class="container mt-5 py-5" data-aos="fade-up">
+      <h2 class="text-center mb-5">Como Funciona</h2>
+      <div class="row text-center">
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="100">
+          <h4>1. Diagnóstico</h4>
+          <p>Analisamos seus processos e dados para entender as principais oportunidades.</p>
         </div>
-
-        <div class="card text-white p-4" data-aos="fade-in">
-          <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
-            <span>Cinthia</span>
-            <span class="countup text-green b800" data-target="151.8" data-suffix="%"></span>
-          </div>
-          <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
-            <span>Beto</span>
-            <span class="countup text-green b800" data-target="128.47" data-suffix="%"></span>
-          </div>
-          <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
-            <span>Matheus</span>
-            <span class="countup text-green b800" data-target="111.11" data-suffix="%"></span>
-          </div>
-          <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
-            <span>Maria</span>
-            <span class="countup text-red b800" data-target="95" data-suffix="%"></span>
-          </div>
-          <div class="d-flex justify-content-between border-bottom border-secondary mt-1">
-            <span>Vanessa</span>
-            <span class="countup text-red b800" data-target="86" data-suffix="%"></span>
-          </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="200">
+          <h4>2. Implementação</h4>
+          <p>Integramos soluções de BPO e tecnologia para otimizar sua operação.</p>
         </div>
-
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="300">
+          <h4>3. Monitoramento</h4>
+          <p>Acompanhamos os resultados com dashboards e indicadores inteligentes.</p>
+        </div>
+        <div class="col-md-3" data-aos="fade-up" data-aos-delay="400">
+          <h4>4. Crescimento</h4>
+          <p>Você toma decisões baseadas em dados e foca no que realmente importa: crescer.</p>
+        </div>
       </div>
-
-      <p class="text-end mt-3 b800">Biágil soluções inteligentes</p>
     </section>
+  </div>
 
-    <section class="container mt-5" data-aos="fade-up">
-      <p class="h1 b800 text-center">Seus dados de RH virando decisões milionárias. <span class="text-blue b800">O que
-          era custo, agora é estrategia</span></p>
-      <p class="h5 mt-3 text-center">Capacitamos empresas a alcançar excelencia operacional por meio de insights de
-        dados
-        poderosos e soluções
-        tecnologicas integradas. com anos de experiencia no mercado, somos especialistas em transformar desafios
-        complexos em oportunidades de crescimento.</p>
-    </section>
+  <!-- ========================= CONTATO ========================= -->
+  <section id="contato" class="container py-5" data-aos="fade-in">
+    <h2 class="text-center mb-4">Entre em Contato</h2>
+    <p class="text-center mb-5">Fale com um especialista e descubra como o Grupo BKS pode transformar sua empresa.</p>
 
-    <form class="row mx-auto mt-5 border shadow p-2" data-aos="fade-in" data-aos-delay="200">
-      <h3 class="text-center">Entre em contato</h3>
-
+    <form class="mx-auto border p-4 shadow bg-card border-light rounded text-white">
       <div class="row">
-        <div class="form-group col-12 col-md-6">
+        <div class="form-group col-md-6 mb-3">
           <label for="nome">Nome</label>
           <input type="text" class="form-control" id="nome" placeholder="Nome">
         </div>
-
-        <div class="form-group col-12 col-md-6">
-          <label for="email">Endereço de email</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Seu email">
-          <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+        <div class="form-group col-md-6 mb-3">
+          <label for="email">E-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Seu email">
         </div>
       </div>
-
-      <div class="form-group col-12 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Aceito me contatarem.</label>
+      <div class="form-group mb-3">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" class="form-control" rows="4" placeholder="Como podemos ajudar?"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Enviar</button>
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="aceito">
+        <label for="aceito" class="form-check-label">Aceito ser contatado.</label>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary px-4 fw-bold rounded-5">Enviar Mensagem</button>
+      </div>
     </form>
-  </main>
+  </section>
 
-  <footer class="py-4 mt-5">
-    <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2">
-      <small class="text-white">© BKS. Todos os direitos reservados.</small>
+  <footer class="py-4 mt-5 text-center bg-night">
+    <div class="container">
+      <small class="text-white">© 2025 Grupo BKS. Todos os direitos reservados.</small>
+      <br />
       <a href="../index.html" class="link-primary">Voltar ao índice</a>
     </div>
   </footer>
