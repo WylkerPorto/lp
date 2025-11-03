@@ -166,3 +166,28 @@ section.container {
 form {
   max-width: 600px;
 }
+
+ul.mx-auto {
+  max-width: fit-content;
+}
+
+.card.bg-card {
+  border-radius: 0.75rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.bg-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.card.bg-card h4 {
+  color: #60a5fa;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.card.bg-card p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
